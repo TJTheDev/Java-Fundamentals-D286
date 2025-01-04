@@ -1,21 +1,12 @@
 /*
-Write a program that outputs the pattern shown below, ending with a newline.
-Each line of the pattern contains 5 characters including whitespace.
+Write a program that prints a formatted "No parking" sign as shown below. Note the first line has two leading spaces. For ALL labs, end with newline (unless otherwise stated).
 
-The output is:
-
-H   H
-H   H
-HHHHH
-H   H
-H   H
+  NO PARKING
+2:00 - 6:00 a.m.
 */
 public class LabProgram {
    public static void main(String[] args) {
-      System.out.println("H   H");
-      System.out.println("H   H");
-      System.out.println("HHHHH");
-      System.out.println("H   H");
-      System.out.println("H   H");
+      System.out.println("  NO PARKING");
+      System.out.println("2:00 - 6:00 a.m.");
    }
 }
