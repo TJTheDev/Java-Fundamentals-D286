@@ -35,6 +35,6 @@ public class LabProgram {
          }
       }
       
-      System.out.println(); // Print newline at the end
+      System.out.println();
    }
 }

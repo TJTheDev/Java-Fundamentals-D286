@@ -21,6 +21,27 @@ import java.util.Scanner;
 
 public class LabProgram {
    public static void main(String[] args) {
-      /* Type your code here. */
+      Scanner scnr = new Scanner(System.in);
+      
+      double[] arrayList = new double[scnr.nextInt()];
+      int i = 0;
+      double largest = 0;
+      
+      while (scnr.hasNext()) {
+         arrayList[i] = scnr.nextDouble();
+         if (arrayList[i] > largest) {
+            largest = arrayList[i];
+         }
+         i++;
+      }
+      
+      
+      for (i = 0; i < arrayList.length; ++i){
+         arrayList[i] = arrayList[i] / largest;
+         System.out.printf("%.2f", arrayList[i]);
+         System.out.print(" ");
+      }
+      System.out.println("");
    }
 }
+

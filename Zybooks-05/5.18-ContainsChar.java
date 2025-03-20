@@ -14,7 +14,28 @@ import java.util.Scanner;
 
 public class LabProgram {
    public static void main(String[] args) {
-      /* Type your code here. */
+      Scanner scnr = new Scanner(System.in);
+      
+      int i = 0;
+      int x = 0;
+      String[] arrayList = new String[scnr.nextInt()];
+      
+      for (i = 0; i < arrayList.length; i++) {
+         arrayList[i] = scnr.next();
+      }
+      
+      char last = scnr.next().charAt(0);
+      
+      for (i = 0; i < arrayList.length; i++) {
+         for (x = 0; x < arrayList[i].length(); x++) {
+            
+            if (last == (arrayList[i].charAt(x))){
+               System.out.print(arrayList[i] + ",");
+               break;
+            }
+         }
+      }
+      System.out.println();
+      
    }
 }
-
