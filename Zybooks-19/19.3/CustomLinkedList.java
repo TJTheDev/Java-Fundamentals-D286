@@ -1,10 +1,18 @@
 public class CustomLinkedList {
    
-   // TODO: Return true if list items are in ascending order
    public static boolean isSorted(IntNode headObj) {
-      /* Type your code here */   
-      
+      IntNode curr = headObj.getNext(); // Start with the first real node
+   
+      while (curr != null && curr.getNext() != null) {
+         if (curr.getNodeData() > curr.getNext().getNodeData()) {
+            return false;
+         }
+         curr = curr.getNext();
+      }
+   
+      return true; // No issues found, list is sorted
    }
+
    
    public static void main(String[] args) {
       IntNode headObj; 

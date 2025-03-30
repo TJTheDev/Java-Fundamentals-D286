@@ -1,10 +1,17 @@
 public class CustomLinkedList {
    
-   // TODO: Return number of nodes in list
    public static int getCount(IntNode headObj) {
-      /* insert your code here */   
+      int count = 0;
+      IntNode curr = headObj.getNext(); // Skip dummy head node
    
+      while (curr != null) {
+         count++;
+         curr = curr.getNext();
+      }
+   
+      return count;
    }
+
    
    public static void main(String[] args) {
       IntNode headObj; 

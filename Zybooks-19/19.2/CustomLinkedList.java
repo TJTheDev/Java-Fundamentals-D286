@@ -1,10 +1,20 @@
 public class CustomLinkedList {
    
-   // TODO: Return index of target item
    public static int indexOf(IntNode headObj, int target) {
-      /* insert your code here */   
-      
+      IntNode curr = headObj.getNext(); // Skip dummy head
+      int index = 0;
+   
+      while (curr != null) {
+         if (curr.getNodeData() == target) {
+            return index;
+         }
+         curr = curr.getNext();
+         index++;
+      }
+   
+      return -1;
    }
+
    
    public static void main(String[] args) {
       IntNode headObj; 
