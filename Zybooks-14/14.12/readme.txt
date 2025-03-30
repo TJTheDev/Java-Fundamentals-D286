@@ -1,14 +1,21 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
-
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+14.12 LAB: Movie ticket prices
+Write a program that takes in a string that holds the values "day" or "night" and an integer that holds a person's age, and outputs a movie ticket price. Movie prices are free for everyone under the age of 4. Daytime prices are $8 for everyone age 4 or higher. Nighttime prices are $12 for ages 4 - 16, $15 for ages 17 - 54 and $13 for ages 55 and above.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+night 50
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+$15
+Ex: If the input is:
+
+day 15
+the output is:
+
+$8
+Ex: If the input is:
+
+night 3
+the output is:
+
+free

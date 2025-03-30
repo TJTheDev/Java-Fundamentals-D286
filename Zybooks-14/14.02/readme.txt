@@ -1,14 +1,22 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
-
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+14.2 LAB: Seasons
+Write a program that takes a date as input and outputs the date's season in the northern hemisphere. The input is a string to represent the month and an int to represent the day.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+April 11
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+Spring
+In addition, check if the string and int are valid (an actual month and day).
+
+Ex: If the input is:
+
+Blue 65
+the output is:
+
+Invalid
+The dates for each season in the northern hemisphere are:
+Spring: March 20 - June 20
+Summer: June 21 - September 21
+Autumn: September 22 - December 20
+Winter: December 21 - March 19

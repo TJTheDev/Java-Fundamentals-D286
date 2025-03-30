@@ -1,14 +1,41 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
+14.14 LAB: Phrases and subphrases
+Write a program that reads two phrases on separate lines and outputs one of the four responses:
 
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+1) Phrase one is found within phrase two
+
+2) Phrase two is found within phrase one
+
+3) Both phrases match
+
+4) No matches
+
+Hint: Use the String method indexOf().
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+fire
+firetruck
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+fire is found within firetruck
+Ex: If the input is:
+
+the green grass grows
+green grass
+the output is:
+
+green grass is found within the green grass grows
+Ex: If the input is:
+
+pick a card
+pick a card
+the output is:
+
+Both phrases match
+Ex: If the input is:
+
+apples
+oranges
+the output is:
+
+No matches

@@ -1,14 +1,17 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
+14.8 LAB: Speeding ticket
+Write a program that is given two integers representing a speed limit and driving speed in miles per hour (mph) and outputs the traffic ticket amount.
 
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+Driving 10 mph under the speed limit (or slower) receives a $50 ticket. Driving 6 - 20 mph over the speed limit receives a $75 ticket. Driving 21 - 40 mph over the speed limit receives a $150 ticket. Driving faster than 40 mph over the speed limit receives a $300 ticket. Otherwise, no ticket is received.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+35 45
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+75
+Ex: If the input is:
+
+35 26
+the output is:
+
+0

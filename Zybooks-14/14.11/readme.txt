@@ -1,14 +1,29 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
+14.11 LAB: Comparing doubles
+Write a program that is given two doubles for comparison and a third double that is a difference threshold, called epsilon. Output one of three phrases:
 
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+output "equal" if the doubles are within 0.001 (exclusively) of each other
+
+output "close enough" if the doubles are within epsilon (exclusively) of each other
+
+output "not close" if doubles are not within epsilon
+
+Note: End each output statement with a newline.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+14.1 14.2 0.2
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+close enough
+Ex: If the input is:
+
+2.1125 2.1132 0.02
+the output is:
+
+equal
+Ex: If the input is:
+
+5.1 5.0 0.05
+the output is:
+
+not close
