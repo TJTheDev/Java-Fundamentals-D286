@@ -1,14 +1,48 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
+15.15 LAB*: Program: Drawing a half arrow
+Program Specifications Write a program that outputs a downwards facing arrow composed of a rectangle and a right triangle. Arrow dimensions are defined by user specified arrow base height, arrow base width, and arrow head width.
 
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+Note: this program is designed for incremental development. Complete each step and submit for grading before starting the next step. Only a portion of tests pass after each step but confirm progress.
 
-Ex: If the input is:
+Step 1 (3 pts). Input the arrow base height (int) and width (int). Draw a rectangle using asterisks (height x width). Hint: use a nested loop in which the inner loop draws one row of *s, and the outer loop iterates a number of times equal to the height. Submit for grading to confirm two tests pass.
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
-the output is:
+Ex: If input is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+6 4
+Sample output is:
+
+****
+****
+****
+****
+****
+****
+Step 2 (3 pts). Input the arrow head width and draw a right triangle. Hint: use a nested loop. Submit for grading to confirm four tests pass.
+
+Ex: If input is:
+
+4 3 4
+Sample output is:
+
+***
+***
+***
+***
+****
+***
+**
+*
+Step 3 (4 pts). Modify the program to only accept an arrow head width that is larger than the arrow base width. Use a loop to continue inputting the arrow head width until the value is larger than the arrow base width. Submit for grading to confirm all tests pass.
+
+Ex: If input is:
+
+4 3 3 2 4
+Sample output is:
+
+***
+***
+***
+***
+****
+***
+**
+*

@@ -1,14 +1,10 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
-
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+15.9 LAB: Find largest number
+Write a program that repeatedly reads in integers until a negative integer is read. The program also keeps track of the largest integer that has been read so far and outputs the largest integer at the end.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+2 77 17 4 -1
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+77
+Assume a user will enter at least one non-negative integer.

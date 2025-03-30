@@ -1,14 +1,15 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
+15.1 LAB: Mad Lib - loops
+Mad Libs are activities that have a person provide various words, which are then used to complete a short story in unexpected (and hopefully funny) ways.
 
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+Write a program that takes a string and an integer as input, and outputs a sentence using the input values as shown in the example below. The program repeats until the input string is quit and disregards the integer input that follows.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+apples 5
+shoes 2
+quit 0
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+Eating 5 apples a day keeps you happy and healthy.
+Eating 2 shoes a day keeps you happy and healthy.
+409950.3364468.qx3zqy7

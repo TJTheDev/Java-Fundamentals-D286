@@ -1,14 +1,21 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
-
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+15.7 LAB: Brute force equation solver
+Numerous engineering and scientific applications require finding solutions to a set of equations. Ex: 8x + 7y = 38 and 3x - 5y = -1 have a solution x = 3, y = 2. Given integer coefficients of two linear equations with variables x and y, use brute force to find an integer solution for x and y in the range -10 to 10.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+8 7 38
+3 -5 -1
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+x = 3, y = 2
+Use this brute force approach:
+
+For every value of x from -10 to 10
+   For every value of y from -10 to 10
+      Check if the current x and y satisfy both equations. If so, output the solution, and finish.
+Ex: If no solution is found, output:
+
+There is no solution
+Assume the two input equations have no more than one solution.
+
+Note: Elegant mathematical techniques exist to solve such linear equations. However, for other kinds of equations or situations, brute force can be handy.

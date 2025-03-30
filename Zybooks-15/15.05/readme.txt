@@ -1,14 +1,24 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
-
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+15.5 LAB: Countdown until matching digits
+Write a program that takes in an integer in the range 11-100 as input. The output is a countdown starting from the integer, and stopping when both output digits are identical. End with a newline.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+93
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+93 92 91 90 89 88
+Ex: If the input is:
+
+11
+the output is:
+
+11
+Ex: If the input is:
+
+9
+or any number not between 11 and 100 (inclusive), the output is:
+
+Input must be 11-100
+For coding simplicity, follow each output number by a space, even the last one.
+
+Use a while loop. Compare the digits; do not write a large if-else for all possible same-digit numbers (11, 22, 33, …, 99), as that approach would be cumbersome for larger ranges.

@@ -1,14 +1,19 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
-
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+15.2 LAB: Checker for integer string
+Forms often allow a user to enter an integer. Write a program that takes in a string representing an integer as input, and outputs Yes if every character is a digit 0-9.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+1995
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+Yes
+Ex: If the input is:
+
+42,000
+or
+
+1995!
+the output is:
+
+No
+Hint: Use a loop and the Character.isDigit() function.
