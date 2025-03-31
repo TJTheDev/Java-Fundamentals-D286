@@ -1,14 +1,11 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
+16.6 LAB: Find mode
+Write a program that reads a list of integers from input and identifies the mode (the value that appears most often). The input is a sequence of integers that ends with -1. All other integers in the list are between 1 and 20 (inclusive). Total number of integers in the list is unknown. Output the mode and end with a newline. Assume that the list is not empty and only one mode exists.
 
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+Hint: Use an array to count the number of occurrences of 1-20. See comment in starter code.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+5 9 2 2 1 4 5 5 -1
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+5

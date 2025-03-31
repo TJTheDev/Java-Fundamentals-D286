@@ -1,14 +1,11 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
-
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+16.5 LAB: Shift right
+Write a program that reads a list of integers from input into an array and modifies the array by shifting each element to the right one position and by shifting the last element to the first position. The input begins with an integer indicating the number of values that follow. Output the modified array and end with a newline.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+6 
+2 4 6 8 10 12
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+12 2 4 6 8 10 
+For coding simplicity, follow every output value by a space, including the last one.

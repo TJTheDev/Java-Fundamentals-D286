@@ -1,14 +1,15 @@
-Two sorted lists have been created, one implemented using a linked list (LinkedListLibrary linkedListLibrary) and the other implemented using the built-in ArrayList class (ArrayListLibrary arrayListLibrary). Each list contains 100 books (title, ISBN number, author), sorted in ascending order by ISBN number.
-
-Complete main() by inserting a new book into each list using the respective LinkedListLibrary and ArrayListLibrary insertSorted() methods and outputting the number of operations the computer must perform to insert the new book. Each insertSorted() returns the number of operations the computer performs.
+16.7 LAB: Nth from end
+Write a program that stores a list of positive integers from input into an array and outputs the Nth number from the end of the array. A negative integer indicates the end of the input and is not stored in the array. Convert the last negative integer to positive and use as N. Output the last integer (as negative) if the size of the array is smaller than N. Assume the array will always contain fewer than 20 integers.
 
 Ex: If the input is:
 
-The Catcher in the Rye
-9787543321724
-J.D. Salinger
+1 5 9 7 5 -3
 the output is:
 
-Number of linked list operations: 1
-Number of ArrayList operations: 1
-Which list do you think will require the most operations? Why?
+9
+Ex: If the input is:
+
+1 2 3 4 5 -6
+the output is:
+
+-6
